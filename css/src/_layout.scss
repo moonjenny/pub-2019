@@ -1,0 +1,107 @@
+// layout.scss stylesheet
+
+/* header */
+
+
+/* container */
+
+
+/* footer */
+
+
+
+
+
+
+/* ****** mediaquery ****** */
+/* iphone4,5 */
+@media screen and (max-width:320px){
+
+}
+
+/* iphone6 */
+@media screen and (min-width:374px) and (max-width:375px){
+
+}
+
+/* iphone6 plus */
+@media screen and (min-width:413px) and (max-width:414px){
+
+}
+
+/* 세로모드 */
+@media screen and (min-width:415px) and (max-width:667px){
+
+}
+
+/* 세로모드 */
+@media screen and (min-width:668px) and (max-width:736px){
+
+}
+
+
+/* Firefox bug fix */
+@keyframes "mq" {
+	0% {
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
+
+
+@keyframes "rotate" {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@-moz-keyframes "rotate" {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes "rotate" {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+@keyframes "bounce" {
+	10%,30%,50%,70%,90% {
+		transform: translateY(-2px);
+	}
+	0%,20%,40%,60%,80%,100% {
+		transform: translateY(2px);
+	}
+}
+@-moz-keyframes "bounce" {
+	10%,30%,50%,70%,90% {
+		-moz-transform: translateY(-2px);
+	}
+	0%,20%,40%,60%,80%,100% {
+		-moz-transform: translateY(2px);
+	}
+}
+@-webkit-keyframes "bounce" {
+	10%,30%,50%,70%,90% {
+		-webkit-transform: translateY(-2px);
+	}
+	0%,20%,40%,60%,80%,100% {
+		-webkit-transform: translateY(2px);
+	}
+}

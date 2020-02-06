@@ -1,0 +1,55 @@
+/* 웹폰트 */
+@font-face {
+	font-family: NanumBarunGothic;
+	src:
+		local(※),
+		url(../font/NanumBarunGothic.eot) format('eot'),
+		url(../font/NanumBarunGothic.woff) format('woff'),
+		url(../font/NanumBarunGothic.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: NanumBarunGothicBold;
+	src:
+		local(※),
+		url(../font/NanumBarunGothicBold.eot) format('eot'),
+		url(../font/NanumBarunGothicBold.woff) format('woff'),
+		url(../font/NanumBarunGothicBold.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: NanumBarunGothicLight;
+	src:
+		local(※),
+		url(../font/NanumBarunGothicLight.eot) format('eot'),
+		url(../font/NanumBarunGothicLight.woff) format('woff'),
+		url(../font/NanumBarunGothicLight.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Raleway-Thin;
+	src:
+		local(※),
+		url(../font/raleway-extralight.svg) format('svg'),
+		url(../font/raleway-extralight.eot) format('eot'),
+		url(../font/raleway-extralight.woff) format('woff'),
+		url(../font/raleway-extralight.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Raleway-Bold;
+	src:
+		local(※),
+		url(../font/raleway-bold-webfont.eot) format('eot'),
+		url(../font/raleway-bold-webfont.woff) format('woff'),
+		url(../font/raleway-bold-webfont.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Microsoft-YaHei;
+	src:
+		local(※),
+		url(../font/MicrosoftYaHei.eot) format('eot'),
+		url(../font/MicrosoftYaHei.woff) format('woff'),
+		url(../font/MicrosoftYaHei.ttf) format('ttf');
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+  <link rel="shortcut icon" href="../mobile/img/favicon/favicon.ico"><!-- 웹용 -->
+  <link rel="apple-touch-icon-precomposed" href="../mobile/img/favicon/favicon.png"><!-- iOS계열 아이콘 -->
+  <link rel="apple-touch-icon-precomposed" href="../mobile/img/favicon/favicon.png" sizes="114x114">
+  <link rel="apple-touch-icon-precomposed" href="../mobile/img/favicon/favicon.png" sizes="120x120">
+  <meta name="mobile-web-app-capable" content="no">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:title" content="Moon Jenny">
+  <meta property="og:url" content="https://moonjenny.github.io/portfolio/index.html">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="Moon Jenny, Portfolio">
+  <title>Moon Jenny</title>
+  <link rel="stylesheet" type="text/css" href="../mobile/css/style.min.css">
+  <script type="text/javascript" src="../mobile/js/jquery-3.4.1.min.js"></script>
+  <!-- <script type="text/javascript" src="../mobile/js/jquery.mobile-1.4.5.min.js"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+    .box {padding:30px 10px 50px;}
+    .con{display:none; padding:10px 10px 20px;}
+    h1{font-size:20px; font-weight:bold;}
+    h2{font-size:15px; border-bottom:1px solid #ccc; padding:20px 0 10px; color:#333}
+    .con h3{font-size:12px; padding-bottom:10px; font-weight:bold; color:#333}
+	.header{position:fixed; min-width:768px; width:100%;height:50px; background:#690;}
+	.header h1{padding:0 14px; color:#fff; font-size:16px; line-height:50px;font-family:'Montserrat', sans-serif;font-weight:600;}
+	.contents {background:transparent; padding-top:50px;}
+	.contents:after {display:block; clear:both; content:'';}
+	.g_menu {position:fixed; top:0; left:0; width:20%; height:100%; border-right:1px solid #ddd; box-sizing:border-box; -webkit-box-sizing:border-box; background:#f3f3f3;}
+	.g_menu ul {margin:50px 0;}
+	.g_menu li {height:40px; line-height:40px; text-indent:10px; font-size:13px; color:#333; border-bottom:1px solid #ddd; cursor:pointer;}
+	.g_menu li.on {font-weight:bold; background:#f5f5f5;font-family:'Montserrat', sans-serif;font-weight:600;}
+	.g_section {margin-left:20%; width:80%; background:#fff;}
+	.g_title {margin:20px 0 10px; padding-top:20px; font-size:18px; font-weight:bold; color:#000; border-top:1px dotted #e7e7e7;}
+	.g_title:first-child {padding-top:0; border-top:none;}
+	.source {display:inline-block; margin:5px 0; padding:3px 5px; font-size:12px; color:#fff; background:#132347; cursor:pointer;}
+	.v_source {margin-bottom:20px;}
+	pre {padding:4px; border:1px dashed #ddd; background:#f5f5f5; font-size:12px; -moz-user-select:text; -webkit-user-select:text; -ms-user-select:text;}
+</style>
+<script>
+	$(function(){
+		$(".g_menu li").bind("click", function(){
+			gId = $(this).index();
+			$(".g_menu li").removeClass("on");
+			$(".g_menu li").eq(gId).addClass("on");
+			$(".contents .con").hide();
+			$(".contents .con").eq(gId).show();
+		});
+		$(".source").bind("click", function(){
+			$(this).next().toggle();
+		});
+	});
+</script>
+</head>
+<body>
+
+<!-- ACCESSIBILITY -->
+<div class="accessibility">
+	<a href="#skip_cont">본문 바로가기</a>
+</div>
+<!--// ACCESSIBILITY -->
+
+<!-- HEADER PUBLISHING INCLUDE -->
+<!-- //HEADER PUBLISHING INCLUDE -->
+
+<!-- HEADER -->
+<header id="header" class="header"><h1>GUIDE HTML</h1></header>
+<!-- //HEADER -->
+
+<!-- CONTENT -->
+<div class="contents" id="contents">
+	<div class="g_menu">
+		<ul>
+			<li class="on">타이틀1</li>
+			<li>타이틀2</li>
+			<li>타이틀3</li>
+			<li>타이틀4</li>
+			<li>타이틀5</li>
+			<li>타이틀6</li>
+			<li>타이틀7</li>
+			<li>타이틀8</li>
+			<li>타이틀9</li>
+			<li>타이틀10</li>
+			<li>타이틀11</li>
+		</ul>
+	</div>
+
+	<div class="g_section">
+
+		<!-- .con -->
+		<div class="con" style="display:block">
+			<div class="g_title">타이틀 1</div>
+			<div class="g_html">
+				<div class="cts_tit" style="position:relative;top:0">
+					<h2>
+						<b>장바구니</b>
+						<button type="button" class="back"><em class="ir">이전페이지</em></button>
+						<button type="button" class="wish"><em class="ir">검색결과 저장하기</em></button>
+					</h2>
+				</div>
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+&lt;div class="cts_tit"&gt;
+	&lt;h2&gt;
+		&lt;b&gt;장바구니&lt;/b&gt;
+		&lt;button type="button" class="back"&gt;&lt;em class="ir"&gt;이전페이지&lt;/em&gt;&lt;/button&gt;
+		&lt;button type="button" class="wish"&gt;&lt;em class="ir"&gt;검색결과 저장하기&lt;/em&gt;&lt;/button&gt;
+	&lt;/h2&gt;
+&lt;/div&gt;</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀3</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀4</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀5</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀6</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀7</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀8</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀9</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀10</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀11</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+		<!-- .con -->
+		<div class="con">
+			<div class="g_title">타이틀12</div>
+			<div class="g_html">
+				
+			</div>
+			<div class="source">소스보기</div>
+			<div class="v_source">
+<pre>
+</pre>
+			</div>
+		</div>
+		<!--// .con -->
+
+	</div>
+</div>
+<!-- //CONTENT -->
+
+
+<!-- layer_popup -->
+<div id="popup01" class="layer_fix">
+	<h3 class="pop_tit">타이틀</h3>
+	<div class="pop_con">
+		<div class="pop_txt">
+			내용입니다.내용입니다.
+			<div class="btn_ship">
+				<ul class="btn_list02">
+					<li><a href="#" class="btn_brd03 c01">취소</a></li>
+					<li><a href="#" class="btn_bg06 c01"><strong>확인</strong></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<a href="#close" class="btn_close"><span class="ir">팝업 닫기</span></a>
+</div>
+<!-- //layer_popup -->
+
+<!-- layer_popup : 찜록록 -->
+<div class="layer_pop nodim pop_zzim">
+	<div class="pop_con">
+		<div class="pop_txt">
+			<div class="zzim_box alC">
+				<p class="ico"><em>찜 목록에</em></p>
+				<p>추가되었습니다.</p>
+				<p class="etc">마이페이지 <em>나의 찜록록</em>에서 <br>확인 하실 수 있습니다.</p>
+			</div>
+		</div>
+		<a href="#close" class="btn_close"><span class="ir">팝업 닫기</span></a>
+	</div>
+</div>
+<!-- //layer_popup : 찜록록 -->
+
+<!-- LAYER SNS -->
+<div id="sns_lyr" class="layer_con" style="display:">
+	<div class="pop_con">
+		<h3 class="pop_tit">SNS 공유하기</h3>
+		<div class="pop_con">
+			<div class="sns">
+				<ul>
+					<li><a href="#" class="fb">페이스북</a></li>
+					<li><a href="#" class="ks">카카오<br/>스토리</a></li>
+					<li><a href="#" class="nb">네이버<br/>블로그</a></li>
+					<li><a href="#" class="ln">라인</a></li>
+					<li><a href="#" class="kt">카카오톡</a></li>
+					<li><a href="#" class="is">인스타그램</a></li>
+					<li><a href="#" class="ur">URL복사</a></li>
+				</ul>
+			</div>
+		</div>
+		<a href="#close" class="btn_close">닫기</a>
+	</div>
+	<div class="pop_con" style="display:none"> <!-- URL복사 터치시 보여주세요 -->
+		<div class="pop_con">
+			<div class="sns">
+				<div class="sns_ur">
+					<div class="info">아래의 url을 전체 선택하여 복사하세요.</div>
+					<div class="urbox"><textarea onfocus = "this.select()">http://m.elandmall.com/Shop/Product_Detail.aspx?PC=A250967100203#none</textarea></div>
+				</div>
+			</div>
+		</div>
+		<a href="#close" class="btn_close">닫기</a>
+	</div>
+	<script type="text/javascript">
+		$(".layer_con .sns .ur").click(function(){
+			$(this).parents(".pop_con").hide().next().show();
+		});
+	</script>
+</div>
+<!-- //LAYER SNS -->
+
+<!-- LAYER MSG. -->
+<div id="msg_lyr_cart" class="layer_pop nodim">
+	<div class="pop_con">
+		<div class="pop_txt">
+			<div class="zzim_box alC">
+				<p><b>선택한 상품이</b><br/>장바구니에 담겼습니다. </p>
+				<p class="cbtn"><a href="#">장바구니 가기</a></p>
+			</div>
+		</div>
+		<a href="#close" class="btn_close"><span class="ir">팝업 닫기</span></a>
+	</div>
+</div>
+<!-- //LAYER MSG. -->
+
+<!-- UI.JS -->
+<script type="text/javascript" src="../mobile/js/ui.mobile.js"></script>
+<!-- //UI.JS-->
+
+</body>
+</html>

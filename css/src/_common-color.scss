@@ -1,0 +1,42 @@
+// common-color.scss stylesheet
+
+/* 공통 컬러 */
+$color-black: #000;
+$color-gray: #999;
+$color-white: #fff;
+
+$color-red: #BF112E;
+$color-orange: #FF6D1F;
+$color-yello: #FFC30D;
+$color-green: #679E02;
+$color-blue: #0849E8;
+$color-navy: #02173E;
+$color-purple: #36175E;
+$color-pink: #FA4985;
+$color-brown: #BF895A;
+
+/* opacity black */
+$opacity-b100: rgba( 0, 0, 0, 1 );
+$opacity-b090: rgba( 0, 0, 0, 0.9 );
+$opacity-b080: rgba( 0, 0, 0, 0.8 );
+$opacity-b070: rgba( 0, 0, 0, 0.7 );
+$opacity-b060: rgba( 0, 0, 0, 0.6 );
+$opacity-b050: rgba( 0, 0, 0, 0.5 );
+$opacity-b040: rgba( 0, 0, 0, 0.4 );
+$opacity-b030: rgba( 0, 0, 0, 0.3 );
+$opacity-b020: rgba( 0, 0, 0, 0.2 );
+$opacity-b010: rgba( 0, 0, 0, 0.1 );
+$opacity-b000: rgba( 0, 0, 0, 0 );
+
+/* opacity white */
+$opacity-w100: rgba( 255, 255, 255, 1 );
+$opacity-w090: rgba( 255, 255, 255, 0.9 );
+$opacity-w080: rgba( 255, 255, 255, 0.8 );
+$opacity-w070: rgba( 255, 255, 255, 0.7 );
+$opacity-w060: rgba( 255, 255, 255, 0.6 );
+$opacity-w050: rgba( 255, 255, 255, 0.5 );
+$opacity-w040: rgba( 255, 255, 255, 0.4 );
+$opacity-w030: rgba( 255, 255, 255, 0.3 );
+$opacity-w020: rgba( 255, 255, 255, 0.2 );
+$opacity-w010: rgba( 255, 255, 255, 0.1 );
+$opacity-w000: rgba( 255, 255, 255, 0 );
